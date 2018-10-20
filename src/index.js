@@ -1,12 +1,12 @@
  import React, {Component} from 'react';
- import About from './components/about';
+ import Home from './components/about';
  import ReactDOM from 'react-dom';
 
  class App extends Component {
    render(){
      return (
        <div>
-        <About />
+        <Home />
        </div>
      );
    }
