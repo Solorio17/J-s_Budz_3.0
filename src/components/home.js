@@ -1,26 +1,53 @@
 import React from 'react';
 
+  $(function(){
+
+  $('#follow').click(function(){
+    $('.modal').modal('show');
+  })
+
+  });
+
 const Home = () =>{
     return (
       <div>
-        <div className="brand">
-          <h3>J's Budz</h3>
+        <div className="row brand">
+          <h4 className="subtitle about">About Us</h4>
+          <h3 className="title">J's Budz</h3>
+          <h4 className="subtitle follow" id="follow">Follow us</h4>
+            <div className="modal" tabIndex="-1" role="dialog">
+               <div className="modal-dialog" role="document">
+                 <div className="modal-content">
+                   <div className="modal-header">
+                     <h5 className="modal-title">Follow us on our social media handles!</h5>
+                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   <div className="modal-body">
+                     <button className="btn btn-primary btn-sm">Facebook</button>
+                     <button className="btn btn-primary btn-sm">Twitter</button>
+                     <button className="btn btn-primary btn-sm">LinkedIn</button>
+                   </div>
+                 </div>
+               </div>
+           </div>
         </div>
 
         <nav className="navbar navbar-expand bg-none">
           <div className="collapse navbar-collapse justify-content-md-center">
             <ul className="nav justify-content-center">
               <li className="nav-item">
-                <a className="nav-link text" href="#">Beautiful Budz</a>
+                <a className="nav-link text" href="/budz">Beautiful Budz</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text" href="#">Delicious Dabz</a>
+                <a className="nav-link text" href="/dabz">Delicious Dabz</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text" href="#">Exquisite Ediblez</a>
+                <a className="nav-link text" href="/ediblez">Exquisite Ediblez</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text" href="#">Delightful Drinkz</a>
+                <a className="nav-link text" href="/drinkz">Delightful Drinkz</a>
               </li>
             </ul>
           </div>
@@ -34,11 +61,12 @@ const Home = () =>{
         </div>
 
           <div className="jumbotron jumbotron-fluid jumbo" id="jumbo">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="jumboslides" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#jumboslides" data-slide-to="0"></li>
+              <li data-target="#jumboslides" data-slide-to="1"></li>
+              <li data-target="#jumboslides" data-slide-to="2"></li>
+              <li data-target="#jumboslides" data-slide-to="3"></li>
             </ol>
             <div className="carousel-inner container">
               <div className="carousel-item active">
@@ -55,19 +83,24 @@ const Home = () =>{
                 <img className="w-100 img" src="http://www.ilovegrowingmarijuana.com/assets/img/comp/ilovegrowingmarijuana.com/avoid-airy-and-loose-marijuana-buds-36489-w800.jpg"
  alt="Third slide"></img>
               </div>
+
+              <div className="carousel-item">
+                <img className="w-100 img" src="http://www.ilovegrowingmarijuana.com/assets/img/comp/ilovegrowingmarijuana.com/avoid-airy-and-loose-marijuana-buds-36489-w800.jpg"
+ alt="Fourth slide"></img>
+              </div>
             </div>
 
-            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#jumboslides" role="button" data-slide="prev">
               <span className="fas fa-chevron-left fa-5x icon" aria-hidden="true"></span>
             </a>
-            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a className="carousel-control-next" href="#jumboslides" role="button" data-slide="next">
               <span className="fas fa-chevron-right fa-5x icon" aria-hidden="true"></span>
             </a>
           </div>
         </div>
 
         <div className="brand">
-          <h3>Trending News</h3>
+          <h3 className="title">Trending News</h3>
         </div>
 
         <div className="row cards">
@@ -92,10 +125,9 @@ const Home = () =>{
         </div>
         <hr></hr>
 
-      <div className="fixed-bottom bg-light footer">
-        <a className="lead">&#169; 2018 Copyright, J's Budz</a>
-      </div>
-
+        <div className="fixed-bottom bg-light footer">
+          <a className="lead">&#169; 2018 Copyright, J's Budz</a>
+        </div>
       </div>
     )
 }
