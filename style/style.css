@@ -1,19 +1,40 @@
 .brand{
-  text-align: center
+  text-align: center;
 }
 
-.brand h3{
-  display: inline-block;
+.title{
   font-family: 'Brush Script MT', cursive;
   font-size: 56px;
   color: white;
-  width: 350px;
+  margin: 0 auto;
 }
 
-.brand h3:hover{
+.title:hover{
   font-size: 64px;
   color: white;
   text-shadow: 1px 1px goldenrod;
+}
+
+.subtitle{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+  color: white;
+}
+
+.follow{
+  padding: 20px;
+  float: right;
+}
+
+.follow:hover{
+  cursor: pointer;
+  color: lightgray;
+  text-shadow: 0.5px 0.5px goldenrod;
+}
+
+.about{
+  padding: 20px;
+  float: left;
 }
 
 .text{
@@ -30,10 +51,9 @@
 }
 
 .jumbotron{
-  box-shadow: 1px 1px 1px;
+  box-shadow: 0px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   height: 527px;
-  background-color: black;
 }
 
 .footer{
