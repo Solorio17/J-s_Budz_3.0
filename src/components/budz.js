@@ -2,7 +2,7 @@ import React from 'react';
 
 const Budz = () =>{
   return(
-    <p>Hello from Budz!</p>
+    <button>Create a new bud</button>
   )
 }
 
