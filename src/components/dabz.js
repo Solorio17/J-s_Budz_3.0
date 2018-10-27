@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dabz = () =>{
   return(
-    <p>Hello from Dabz!</p>
+    <button>Create a new dab</button>
   )
 }
 
