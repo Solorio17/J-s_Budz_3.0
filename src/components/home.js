@@ -28,6 +28,8 @@ const Home = () =>{
                      <button className="btn btn-primary btn-sm">Facebook</button>
                      <button className="btn btn-primary btn-sm">Twitter</button>
                      <button className="btn btn-primary btn-sm">LinkedIn</button>
+                     <button className="btn btn-primary btn-sm">Instagram</button>
+                     <button className="btn btn-primary btn-sm">Youtube</button>
                    </div>
                  </div>
                </div>

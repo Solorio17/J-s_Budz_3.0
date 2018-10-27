@@ -2,7 +2,7 @@ import React from 'react';
 
 const Drinkz = () =>{
   return(
-    <p>Hello from Drinkz!</p>
+    <button>New button for drinks</button>
   )
 }
 
